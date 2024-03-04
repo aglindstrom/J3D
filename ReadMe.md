@@ -58,7 +58,7 @@ rand: generates random z heights for a mesh grid
 ## j3D File Format
 The file format is a simple ascii format. The format header is two values the number of indices followed by the number of vertices. A list of indices follows the header. The indices are grouped by faces, and separated by newlines. The vertices are listed after the indices. Vertices are listed as x,y,z coordinates and are separated by spaces. New line characters separate the vertices. The format looks like this.
 ```
-num_indices num_vertices
+ 6 4
  1 2 3
  2 3 4
  ...
