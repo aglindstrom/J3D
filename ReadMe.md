@@ -4,9 +4,9 @@
 j3D generates jgraph code for a 3d mesh. Here is a fun [youtube](https://youtu.be/R08tyazQmP8) video animation of a rendered graph.
 
 ## Compilation
-just use make.
+just use make. Running
 `make`
-will compile the j3D binary, the makegrid binary, and all the generator binaries. They will be in `./bin/`. It will run all necessary commands to generate images of each generator graph. Images of the graph will be written to `./out/`.
+in the repository root directory will compile the j3D binary, the makegrid binary, and all the generator binaries. They will be in `./bin/`. It will run all necessary commands to generate images of each generator graph. Images of the graph will be written to `./out/`.
 
 ## Contents
 - [j3D](#usage): generates a Jgraph file from a provided txt
