@@ -34,13 +34,12 @@ The result is a nice isometric projection. Using radians can be annoying though.
 ./j3D -d -x -35.26 -y 54.74 -z 45 < data.txt
 ```
 
-Here's a list of the options
-```
+### Options
 - d: use degree inputs instead of radian inputs
 - x: the rotation on the x axis
 - y: the rotation on the y axis
 - z: the rotation on the z axis
-```
+  
 One note is the the x and y axis rotations must be balanced or the projection will be tipped on it's side one way or the other.
 
 ### MakeGrid
