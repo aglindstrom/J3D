@@ -1,14 +1,14 @@
 # Jgraph 3D
 ## Introduction
-J3D generates jgraph code for a 3d mesh. Here is a fun [youtube](https://youtu.be/R08tyazQmP8) video animation of a rendered graph.
+j3D generates jgraph code for a 3d mesh. Here is a fun [youtube](https://youtu.be/R08tyazQmP8) video animation of a rendered graph.
 
 ## Compilation
 just use make.
 `make`
-make will compile the J3D binary and all generator binaries along side it.
+make will compile the j3D binary and all generator binaries along side it.
 
 ## Contents
-- [J3D](#usage): generates a jgraph file from a provided txt
+- [j3D](#usage): generates a jgraph file from a provided txt
 - [makegrid](#makegrid): makes a grid of points with z heights specified by an input file
 - [sine](#sine): generates a sinewave along the X axis of a mesh grid
 - [rand](#rand): generates random z heights for a mesh grid
@@ -16,13 +16,13 @@ make will compile the J3D binary and all generator binaries along side it.
 ## Usage
 
 The simplest usage is to simply pass a file
-`./J3D < data.txt`
+`./j3D < data.txt`
 this is boring and will only give you a top down view of the mesh, still technically in 3d though.
 
 This is a bit more interesting
-`./J3D -x -0.615 -y 0.615 -z 0.785 < data.txt`
+`./j3D -x -0.615 -y 0.615 -z 0.785 < data.txt`
 The result is a nice isometric projection. Using radians can be annoying though. To use degrees instead use this.
-`./J3D -d -x -35.26 -y 35.26 -z 45 < data.txt`
+`./j3D -d -x -35.26 -y 35.26 -z 45 < data.txt`
 
 Here's a list of the options
 
@@ -34,7 +34,7 @@ Here's a list of the options
 One note is the the x and y axis rotations must be balanced or the projection will be tipped on it's side one way or the other.
 
 ## Generators
-Generators can be used to generate meshes for J3D but are not necessary. As long as the correct file format is used the mesh will be rendered.
+Generators can be used to generate meshes for j3D but are not necessary. As long as the correct file format is used the mesh will be rendered.
 
 ### Usage
 generators all have the same usage
