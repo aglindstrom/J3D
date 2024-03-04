@@ -1,6 +1,15 @@
 /*
+ * 3/3/2024
+ * alindstr | Andrew Lindstrom
+ * lab 1: jgraph
  *
- *
+ * J3D: makes an isometric projection on a list of 3D indices and vertices 
+ * and converts them into jgraph poly triangles
+ *   @options
+ *   	-x: x axis rotation
+ *   	-y: y axis rotation
+ *   	-z: z axis rotation
+ *   	-d: use degrees for rotation inputs
  *
  */
 
@@ -95,7 +104,7 @@ int main(int argc, char** argv){
    
    for(i = num_faces*3-3, j = num_faces-1; j != -1; i-=3, j--){
       z = mesh[indices[i]].depth/d_max;
-      make_poly(result, indices+i, "solid", mesh[indices[i]].coords[2], z, z);
+      make_poly(result, indices+i, "solid", z, z, z);
    }
    
    printf("\n");
@@ -224,10 +233,10 @@ void load_mesh(vertex** mesh, int** indices, int* num_faces, int* num_verts){
  * parse_args parses the command line arguments for j3D 
  *    
  *    usable arguments:
- *       -x: x axis angle
- *       -y: y axis angle
- *       -z: z axis angle 
- *       -d: convert degrees input to radians
+ *       -x: x axis rotation
+ *       -y: y axis rotation
+ *       -z: z axis rotation
+ *       -d: use degrees for rotation inputs
  *
  * @params:
  *    argc: number of command line args
