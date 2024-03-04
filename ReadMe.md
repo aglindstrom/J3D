@@ -11,7 +11,8 @@ will compile the j3D binary and all generator binaries alongside it and put them
 ## Contents
 - [j3D](#usage): generates a jgraph file from a provided txt
 - [makegrid](#makegrid): makes a grid of points with z heights specified by an input file
-- [sine](#sine): generates a sinewave along the X axis of a mesh grid
+- [sine](#sine): generates a sine wave along the X-axis of a mesh grid
+- [rsine](#rsine): generates a sine wave along the radius of a mesh grid
 - [rand](#rand): generates random z heights for a mesh grid
 
 ## Usage
@@ -48,14 +49,18 @@ makegrid is unique because it is the only generator that takes input. The input 
 ### Sine
 sine: generates a sinewave along the X axis of a mesh grid
 
+### Rsine
+rsine: generates a sinewave along the radius of a mesh grid
+
 ### Rand
 rand: generates random z heights for a mesh grid
 
 ### Options
 - x: width of the mesh
 - y: length of the mesh
-- t: sine: offset of the sine wave | rand: random seed 
-
+- t: sine: offset of the sine wave | rsine: offset of the sine wave | rand: random seed 
+- s: sine: scale of the sine wave | rsine: scale of the sinewave
+  
 ## j3D File Format
 The file format is a simple ascii format. The format header is two values the number of indices followed by the number of vertices. A list of indices follows the header. The indices are grouped by faces, and separated by newlines. The vertices are listed after the indices. Vertices are listed as x,y,z coordinates and are separated by spaces. New line characters separate the vertices. The format looks like this.
 ```
