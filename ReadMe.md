@@ -1,11 +1,12 @@
 # Jgraph 3D
+![](out/rsine.jpg)
 ## Introduction
 j3D generates jgraph code for a 3d mesh. Here is a fun [youtube](https://youtu.be/R08tyazQmP8) video animation of a rendered graph.
 
 ## Compilation
 just use make.
 `make`
-make will compile the j3D binary and all generator binaries along side it.
+will compile the j3D binary and all generator binaries alongside it and put them in `./bin/`. It will run all necessary commands to generate images of each generator graph. Images of the graph will be written to `./out/`.
 
 ## Contents
 - [j3D](#usage): generates a jgraph file from a provided txt
