@@ -1,4 +1,5 @@
 # Jgraph 3D
+![](out/rsine.jpg)
 ## Introduction
 j3D generates jgraph code for a 3d mesh. Here is a fun [youtube](https://youtu.be/R08tyazQmP8) video animation of a rendered graph.
 
