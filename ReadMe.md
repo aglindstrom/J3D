@@ -55,6 +55,18 @@ rand: generates random z heights for a mesh grid
 - y: length of the mesh
 - t: sine: offset of the sine wave | rand: random seed 
 
+## j3D File Format
+The file format is a simple ascii format. The format header is two values the number of indices followed by the number of vertices. A list of indices follows the header. The indices are grouped by faces, and separated by newlines. The vertices are listed after the indices. Vertices are listed as x,y,z coordinates and are separated by spaces. New line characters separate the vertices. The format looks like this.__
+`num_indices num_vertices__
+ 1 2 3__
+ 2 3 4__
+ ...__
+ 0.0 0.0 1.0__
+ 1.0 0.0 1.0__
+ 0.0 1.0 1.0__
+ 1.0 1.0 1.0`
+
+
 ## Future Additions
 
 - Add standford ply support
