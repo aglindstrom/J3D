@@ -19,14 +19,20 @@ will compile the j3D binary, the makegrid binary, and all the generator binaries
 
 ## Usage
 
-The simplest usage is to pass a file
-```./j3D < data.txt```
+The simplest usage is to pass a file on stdin
+```
+./j3D < data.txt
+```
 this is boring and will only give you a top-down view of the mesh, still technically in 3d.
 
 This is a bit more interesting
-```./j3D -x -0.615 -y 0.955 -z 0.785 < data.txt```
+```
+./j3D -x -0.615 -y 0.955 -z 0.785 < data.txt
+```
 The result is a nice isometric projection. Using radians can be annoying though. To use degrees instead use this.
-```./j3D -d -x -35.26 -y 54.74 -z 45 < data.txt```
+```
+./j3D -d -x -35.26 -y 54.74 -z 45 < data.txt
+```
 
 Here's a list of the options
 ```
@@ -45,7 +51,9 @@ Generators can be used to generate meshes for j3D but are not necessary. As long
 
 ### Usage
 generators all have the same usage
-```./<generator> -x 10 -y 10 -t 2```
+```
+./<generator> -x 10 -y 10 -t 2
+```
 
 ### Options
 - x: width of the mesh
