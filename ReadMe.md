@@ -61,7 +61,6 @@ The file format is a simple ascii format. The format header is two values the nu
  6 4
  1 2 3
  2 3 4
- ...
  0.0 0.0 1.0
  1.0 0.0 1.0
  0.0 1.0 1.0
